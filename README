@@ -1,0 +1,4 @@
+This Repository contains the Forward Kinematics, Forward Differential
+Kinematics, and the Herarchical Inverse Kinematics for the Y robot
+with 6 Degrees of freedom and two end-effectors with a Virtual model in
+Matlab
