@@ -1,0 +1,580 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+DEF Frontal_View Viewpoint {
+	position	0 3 13
+}
+Background {
+	groundAngle	[ 0.9, 1.5, 1.57 ]
+	groundColor	[ 0 0.8 0,
+			  0.174249 0.82 0.187362,
+			  0.467223 0.82 0.445801,
+			  0.621997 0.67 0.600279 ]
+	skyAngle	[ 0.1, 1.2, 1.57 ]
+	skyColor	[ 0.76238 0.8 0.1427,
+			  0.277798 0.219779 0.7,
+			  0.222549 0.390234 0.7,
+			  0.60094 0.662637 0.69 ]
+}
+DEF S_0 Transform {
+	translation	0 4 0
+	children [ 
+	    DEF Z_Axis Transform {
+		    children DEF Z_Axis Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    diffuseColor	0 0 0.9
+				    }
+
+			    }
+
+			    geometry	Cylinder {
+				    height	8
+				    radius	0.05
+			    }
+
+		    }
+	    }
+
+	    DEF Y_Axis Transform {
+		    rotation	0 0 -1  1.5708
+		    center	0 -4 0
+		    children DEF Y_Axis Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    diffuseColor	0 1 0
+				    }
+
+			    }
+
+			    geometry	Cylinder {
+				    height	8
+				    radius	0.05
+			    }
+
+		    }
+	    }
+	]
+}
+DEF Q_1 Transform {
+	translation	0 0 0
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+				    diffuseColor	0 1 0
+			    }
+
+		    }
+
+		    geometry	Sphere {
+			    radius	0.2
+		    }
+
+	    }
+
+	    DEF Link_1 Transform {
+		    translation	-9.83477e-007 0.999996 0
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+						diffuseColor	0 0 0.9
+					}
+
+				}
+
+				geometry	Cylinder {
+					height	2
+					radius	0.1
+				}
+
+			}
+
+			DEF Q_2 Transform {
+				translation	0 1 0
+				children [ 
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+							    diffuseColor	0.1 1 0
+						    }
+
+					    }
+
+					    geometry	Sphere {
+						    radius	0.2
+					    }
+
+				    }
+
+				    DEF Link_2 Transform {
+					    translation	0 1 0
+					    children [ 
+						Shape {
+							appearance	Appearance {
+								material	Material {
+									diffuseColor	0 0 1
+								}
+
+							}
+
+							geometry	Cylinder {
+								radius	0.1
+							}
+
+						}
+
+						DEF Q_3_Der Transform {
+							translation	0 1 0
+							children [ 
+							    Shape {
+								    appearance	Appearance {
+									    material	Material {
+										    diffuseColor	0 1 0
+									    }
+
+								    }
+
+								    geometry	Sphere {
+									    radius	0.2
+								    }
+
+							    }
+
+							    DEF Link3_Der_Pi Transform {
+								    translation	0 1 0
+								    rotation	0 0 -1  0.785398
+								    center	0 -1 0
+								    children DEF Link3_Der Transform {
+									    translation	0 0 0
+									    children [ 
+										Shape {
+											appearance	Appearance {
+												material	Material {
+													diffuseColor	0 0 1
+												}
+
+											}
+
+											geometry	Cylinder {
+												radius	0.1
+											}
+
+										}
+
+										DEF Q_5 Transform {
+											translation	0 1 0
+											children [ 
+											    Shape {
+												    appearance	Appearance {
+													    material	Material {
+														    diffuseColor	0 1 0
+													    }
+
+												    }
+
+												    geometry	Sphere {
+													    radius	0.2
+												    }
+
+											    }
+
+											    DEF Link4_Der Transform {
+												    translation	0 1 0
+												    children [ 
+													Shape {
+														appearance	Appearance {
+															material	Material {
+																diffuseColor	0 0 1
+															}
+
+														}
+
+														geometry	Cylinder {
+															radius	0.1
+														}
+
+													}
+
+													DEF EE_Der Transform {
+														translation	0 1 0
+														children [ 
+														    Shape {
+															    appearance	Appearance {
+																    material	Material {
+																	    diffuseColor	1 0 0
+																    }
+
+															    }
+
+															    geometry	Sphere {
+																    radius	0.2
+															    }
+
+														    }
+
+														    DEF S_EE_Der Transform {
+															    rotation	0 0 1  0.785398
+															    children [ 
+																DEF Y_Axis Transform {
+																	translation	0 0.75 0
+																	children Shape {
+																		appearance	Appearance {
+																			material	Material {
+																				diffuseColor	0 0 1
+																			}
+
+																		}
+
+																		geometry	Cylinder {
+																			height	1.5
+																			radius	0.05
+																		}
+
+																	}
+																}
+
+																DEF Z_Axis Transform {
+																	translation	0 0.75 0
+																	rotation	0 0 -1  1.5708
+																	center	0 -0.75 0
+																	children Shape {
+																		appearance	Appearance {
+																			material	Material {
+																				ambientIntensity	0.2
+																				diffuseColor	0 1 0
+																			}
+
+																		}
+
+																		geometry	Cylinder {
+																			height	1.5
+																			radius	0.05
+																		}
+
+																	}
+																}
+															    ]
+														    }
+														]
+													}
+
+													DEF EE_Der_Camera Transform {
+														translation	2.9 0.1 -9
+														rotation	0 0 1  0.785398
+														children DEF View_EE_Der Viewpoint {
+															position	0 3 13
+														}
+													}
+												    ]
+											    }
+											]
+										}
+									    ]
+								    }
+							    }
+							]
+						}
+
+						DEF Q_4_Izq Transform {
+							translation	0 1 0
+							children [ 
+							    Shape {
+								    appearance	Appearance {
+									    material	Material {
+										    diffuseColor	0 1 0
+									    }
+
+								    }
+
+								    geometry	Sphere {
+									    radius	0.2
+								    }
+
+							    }
+
+							    DEF Link3_Izq_Pi Transform {
+								    translation	0 1 0
+								    rotation	0 0 1  0.785398
+								    center	0 -1 0
+								    children DEF Link3_Izq Transform {
+									    translation	0 0 0
+									    children [ 
+										Shape {
+											appearance	Appearance {
+												material	Material {
+													diffuseColor	0 0 1
+												}
+
+											}
+
+											geometry	Cylinder {
+												radius	0.1
+											}
+
+										}
+
+										DEF Q_6 Transform {
+											translation	0 1 0
+											children [ 
+											    Shape {
+												    appearance	Appearance {
+													    material	Material {
+														    diffuseColor	0 1 0
+													    }
+
+												    }
+
+												    geometry	Sphere {
+													    radius	0.2
+												    }
+
+											    }
+
+											    DEF Link_final_izq Transform {
+												    translation	0 1 0
+												    children [ 
+													Shape {
+														appearance	Appearance {
+															material	Material {
+																diffuseColor	0 0 1
+															}
+
+														}
+
+														geometry	Cylinder {
+															radius	0.1
+														}
+
+													}
+
+													DEF EE_Izq Transform {
+														translation	0 1 0
+														children [ 
+														    Shape {
+															    appearance	Appearance {
+																    material	Material {
+																	    diffuseColor	1 0 0
+																    }
+
+															    }
+
+															    geometry	Sphere {
+																    radius	0.2
+															    }
+
+														    }
+
+														    DEF S_EE_izq Transform {
+															    rotation	0 0 -1  0.785398
+															    children [ 
+																DEF Y_Axis Transform {
+																	translation	0 0.75 0
+																	children Shape {
+																		appearance	Appearance {
+																			material	Material {
+																				diffuseColor	0 0 1
+																			}
+
+																		}
+
+																		geometry	Cylinder {
+																			height	1.5
+																			radius	0.05
+																		}
+
+																	}
+																}
+
+																DEF Z_Axis Transform {
+																	translation	0 0.75 0
+																	rotation	0 0 -1  1.5708
+																	center	0 -0.75 0
+																	children Shape {
+																		appearance	Appearance {
+																			material	Material {
+																				ambientIntensity	0.2
+																				diffuseColor	0 1 0
+																			}
+
+																		}
+
+																		geometry	Cylinder {
+																			height	1.5
+																			radius	0.05
+																		}
+
+																	}
+																}
+															    ]
+														    }
+														]
+													}
+
+													DEF EE_Izq_Camera Transform {
+														translation	-1.7 -1.4 -8.5
+														rotation	0 0 -1  0.785398
+														children DEF View_EE_Izq Viewpoint {
+															position	0 3 13
+														}
+													}
+												    ]
+											    }
+											]
+										}
+									    ]
+								    }
+							    }
+							]
+						}
+					    ]
+				    }
+				]
+			}
+		    ]
+	    }
+	]
+}
+DEF Tras_Objective1 Transform {
+	translation	0 0 0
+	children DEF RX_Obj1 Transform {
+		children DEF RY_Obj1 Transform {
+			children DEF RZ_Obj1 Transform {
+				children [ 
+				    DEF S_Obj1 Transform {
+					    children [ 
+						DEF Y_Axis Transform {
+							translation	0 0.75 0
+							children Shape {
+								appearance	Appearance {
+									material	Material {
+										diffuseColor	0 0 1
+									}
+
+								}
+
+								geometry	Cylinder {
+									height	1.5
+									radius	0.05
+								}
+
+							}
+						}
+
+						DEF Z_Axis Transform {
+							translation	0 0.75 0
+							rotation	0 0 -1  1.5708
+							center	0 -0.75 0
+							children Shape {
+								appearance	Appearance {
+									material	Material {
+										ambientIntensity	0.2
+										diffuseColor	0 1 0
+									}
+
+								}
+
+								geometry	Cylinder {
+									height	1.5
+									radius	0.05
+								}
+
+							}
+						}
+					    ]
+				    }
+
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+						    }
+
+					    }
+
+					    geometry	Sphere {
+						    radius	0.2
+					    }
+
+				    }
+				]
+			}
+		}
+	}
+}
+DEF Tras_Objective2 Transform {
+	translation	0 0 0
+	children DEF RX_Obj2 Transform {
+		children [ 
+		    DEF RY_Obj2 Transform {
+			    children DEF RZ_Obj2 Transform {
+				    children [ 
+					Shape {
+						appearance	Appearance {
+							material	Material {
+							}
+
+						}
+
+						geometry	Sphere {
+							radius	0.2
+						}
+
+					}
+
+					DEF S_Obj2 Transform {
+						children [ 
+						    DEF Y_Axis Transform {
+							    translation	0 0.75 0
+							    children Shape {
+								    appearance	Appearance {
+									    material	Material {
+										    diffuseColor	0 0 1
+									    }
+
+								    }
+
+								    geometry	Cylinder {
+									    height	1.5
+									    radius	0.05
+								    }
+
+							    }
+						    }
+
+						    DEF Z_Axis Transform {
+							    translation	0 0.75 0
+							    rotation	0 0 -1  1.5708
+							    center	0 -0.75 0
+							    children Shape {
+								    appearance	Appearance {
+									    material	Material {
+										    ambientIntensity	0.2
+										    diffuseColor	0 1 0
+									    }
+
+								    }
+
+								    geometry	Cylinder {
+									    height	1.5
+									    radius	0.05
+								    }
+
+							    }
+						    }
+						]
+					}
+				    ]
+			    }
+		    }
+
+		    Transform {
+			    children []
+		    }
+		]
+	}
+}
