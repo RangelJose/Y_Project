@@ -26,7 +26,6 @@ if isempty(Ymodel)
     display('--> Y model loaded')
 end
 
-
 %Starting Forward Kinematics
 T=body_LF_Transform (Ymodel.NB, Ymodel.LFinPF, Ymodel.axes, q, Ymodel.parent);
 T_ee{1} = T{5}*Ymodel.EEinLF{1}; %End-effector Right Arm
@@ -76,7 +75,6 @@ J{2} = [Jv{2}(1,:);Jv{2}(3,:);Jwb{2}];
 % Obtaining Delta X
 d_X{1} = [R_Task(1)-O_n{1}(1);R_Task(2)-O_n{1}(3);R_Task(3)-Ey{1}]; %D_X = Xd-X
 d_X{2} = [L_Task(1)-O_n{2}(1);L_Task(2)-O_n{2}(3);L_Task(3)-Ey{2}];
-d_X{1}
 % Delta X obtained
 
 
